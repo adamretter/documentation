@@ -1,5 +1,5 @@
 <!-- $Id$ -->
-<book>
+<book xmlns:xi="http://www.w3.org/2001/XInclude">
     <bookinfo>
         <productname>eXist-db – Open Source Native XML Database</productname>
         <title>XInclude</title>
@@ -55,7 +55,7 @@
                     <![CDATA[<xi:include href="/db/apps/doc/data/disclaimer-short.xml"/>]]></synopsis>
             <para>The result is included below:</para>
             <synopsis language="xml">
-                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="/db/apps/doc/data/disclaimer-short.xml">
+                <xi:include href="/db/apps/doc/data/disclaimer-short.xml">
                     <xi:fallback>
                         <para>For this XInclude example to work, you need to install
 			the Documentation application. 
@@ -78,7 +78,7 @@
                     <xi:include>]]></synopsis>
             <para>See the result below:</para>
             <synopsis language="xml">
-                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="I-do-not exist.xml">
+                <xi:include href="I-do-not exist.xml">
                     <xi:fallback>
                         <para>The included document was not found!</para>
                     </xi:fallback>
@@ -98,7 +98,7 @@
                     <![CDATA[<xi:include href="disclaimer.xml" xpointer="p"/>]]></synopsis>
             <para>The result of the XInclude is displayed below:</para>
             <synopsis language="xml">
-                <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="disclaimer.xml" xpointer="statement">
+                <xi:include href="disclaimer.xml" xpointer="statement">
                     <xi:fallback>
                         <para>For this XInclude example to work, you need to install
 			the Documentation application.
